@@ -1,0 +1,234 @@
+.wrap {
+    display: flex;
+  }
+  .index-main {
+      display: flex;
+      width: 100%;
+  }
+  .text{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    font-size: 40px;
+    margin-top: 60px;
+    color: darkseagreen;
+  }
+  .text2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    font-size: 18px;
+    color: slategray;
+  }
+  .item {
+    width: 35%;
+
+  }
+  .item img{
+      object-fit: cover;
+      width: 100%;
+      height: 80%;
+      transform:scale(1);
+      transition:.3s;
+      
+  }
+  .item:hover img {
+    -webkit-transform:scale(1.08);
+    -moz-transform:scale(1.08);
+    -ms-transform:scale(1.08);   
+    -o-transform:scale(1.08);
+    transform:scale(1.08);
+}
+.title{
+  text-align: center;
+  color: darkslateblue;
+  
+}
+.fav {
+  position: absolute;
+  top: 150px;
+  width: 105%;
+}
+.fav-text {
+  margin: 0;
+  font-size: 65px;
+  text-align: center;
+  color: darkcyan;
+ 
+}
+/*버튼색깔바꾸기*/
+.content a{
+  text-decoration-line: none;
+  color: rgb(88, 99, 252);
+  font-weight: bold;
+  margin-left: 705px;
+  font-size: 1.5rem;
+}
+.content{
+  margin-top: 600px;
+  margin-bottom: 80px;
+  margin-left: 30px;
+}
+.content:before{
+  content:'';
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+button{
+  background:#f9491d;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.3em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:#d82121;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #ea8f2e;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width: 100%;
+  transition:800ms ease all;
+}
+.ex {
+margin-left: 100px;
+}
+.ex2 {
+  margin-left: 100px;
+  margin-top: 140px;
+}
+.youtube1{
+  position: relative;
+  width: 560px;
+}
+.youtube1 iframe{
+  width: 100%;
+  position: absolute;
+  top: 60px;
+}
+.youtube1 .mb1{
+  position: absolute;
+  width: 100%;
+  display:inline;
+  text-align: center;
+  z-index: 10;
+}
+.youtube2{
+  position: relative;
+  width: 560px;
+  margin-left: 700px;
+}
+.youtube2 iframe{
+  width: 100%;
+  position: absolute;
+  top: 60px;
+}
+.youtube2 .mb2{
+  position: absolute;
+  width: 100%;
+  display:inline;
+  text-align: center;
+  z-index: 10;
+}
+.youtube{
+  margin-left: 250px;
+  margin-top: 4%;
+}
+
+.header a{
+  font-size: 19px;
+  margin-right: 100px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header{
+  background: black;
+  display: flex;
+  padding: 50px 10px;
+  justify-content: flex-end;
+}
+/* 카테고리*/
+.animated-text{
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 0 40px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.line{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.line:first-child{
+  animation: anim 8s infinite;
+}
+
+@keyframes anim {
+  0%{
+    margin-top : 0;
+  }
+  16%{
+    margin-top : -60px;
+  }
+  33%{
+    margin-top : -120px;
+  }
+  50%{
+    margin-top : -180px;
+  }
+  66%{
+    margin-top : -120px;
+  }
+  82%{
+    margin-top : -60px;
+  }
+  100%{
+    margin-top : 0;
+  }
+}
+/*떡볶이종류*/
+.kinds{
+  text-align: center;
+}
+.kinds-color{
+  font-size: 38px;
+  margin-bottom: 0;
+  color: cadetblue;
+}
+.gg img{
+  width: 600px;
+}
+.gg{
+  text-align: center;
+}
